@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>World Explorer Hub</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<h2>🌍 World Explorer</h2>
+
+<div class="links">
+<button onclick="show('home')">Home</button>
+<button onclick="show('countries')">Countries</button>
+<button onclick="show('time')">Time</button>
+<button onclick="show('places')">Places</button>
+</div>
+
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active">
+<h1>Explore Earth 🌍</h1>
+<p>All countries, time zones, and places in one hub.</p>
+</section>
+
+<!-- COUNTRIES -->
+<section id="countries">
+<h1>🌎 Countries of the World</h1>
+
+<div class="grid" id="countriesGrid"></div>
+</section>
+
+<!-- TIME -->
+<section id="time">
+<h1>🕒 Time Zones</h1>
+
+<div class="grid">
+
+<div class="card">New York - EST</div>
+<div class="card">London - GMT</div>
+<div class="card">Tokyo - JST</div>
+<div class="card">Sydney - AEST</div>
+<div class="card">Los Angeles - PST</div>
+<div class="card">Dubai - GST</div>
+
+</div>
+
+</section>
+
+<!-- PLACES -->
+<section id="places">
+<h1>📍 Random Place</h1>
+
+<button onclick="randomPlace()">Generate Place</button>
+
+<h2 id="place"></h2>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
